@@ -6,6 +6,10 @@ app = Flask(__name__)
 def index():
     return "Hello World!!!!"
 
+@app.route("/user")
+def index():
+    return "Hello user"
+
 if __name__ == '__main__':
     app.run(debug=True)
 
